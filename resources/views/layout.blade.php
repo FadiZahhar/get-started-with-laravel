@@ -15,11 +15,12 @@
 
         <a href="#">Home</a> |
         <a href="#">Contact</a> |
-        <a href="#">About</a>
+        <a href="#">About</a> |
+        Welcome back {!! $name !!}!
 
         <hr>
 
-        <?php echo $content; ?>
+        @yield('content')
 
     </body>
 </html>

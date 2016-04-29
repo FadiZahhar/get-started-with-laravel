@@ -1,9 +1,9 @@
 <?php
 
 Route::get('/', function () {
-    return view('layout')->nest('content', 'pages.home');
+    return view('pages.home', ['name' => '<strong>Jason</strong>']);
 });
 
 Route::get('contact', function () {
-    return view('layout')->nest('content', 'pages.contact');
+    return view('pages.contact');
 });
