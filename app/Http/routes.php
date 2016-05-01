@@ -1,16 +1,19 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+Route::get('mail', function () {
+    Mail::raw('hello this is just a test', function ($message) {
+        $message->subject('testing')
+                ->to('bill@mail.com')
+                ->from('bob@mail.com');
+    });
 
-Route::get('/', function () {
-    return view('welcome');
+    return 'email has been sent';
+});
+
+Route::get('mail/view', function () {
+    Mail::send('emails.example', ['name' => 'Bob'], function ($message) {
+        $message->subject('testing')
+                ->to('bill@mail.com')
+                ->from('bob@mail.com');
+    });
 });
