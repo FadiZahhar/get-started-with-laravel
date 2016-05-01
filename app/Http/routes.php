@@ -1,16 +1,19 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+Route::get('session', function () {
+    Session::put('example', 'testing');
 
-Route::get('/', function () {
-    return view('welcome');
+    Session::put('array', ['one']);
+
+    Session::push('array', 'two');
+
+    Session::flash('flashy', 'example');
+});
+
+Route::get('session/read', function () {
+    var_dump(Session::get('example', 'default value'));
+
+    var_dump(Session::get('array'));
+
+    var_dump(Session::get('flashy', 'nothing flashed'));
 });
