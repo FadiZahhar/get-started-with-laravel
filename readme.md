@@ -1,27 +1,27 @@
-# Laravel PHP Framework
+# [Get Started With Laravel 5][published url]
+## Instructor: [Jason Lewis][instructor url]
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Laravel is a PHP framework for modern web apps. Recently upgraded to version 5, Laravel is a mature system that continues to win support due to its elegance and stability. Laravel ships with built-in support for database migrations, object-relational mapping, routing and authentication, making it easier for developers to start and maintain their work.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+In this course, you'll start with the basics of the Laravel framework. You'll begin by preparing a dev environment and learning how to configure Laravel. Then you'll continue on to learn foundational topics such as, including routing and requests, responses, views, sessions, e-mails, forms, and using databases.
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Source Files Description
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+The source files for this course are split over several branches, with each branch identifying the end state of a particular lesson.
 
-## Security Vulnerabilities
+Some lessons do not have a branch as they do not have any relevant code.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+All the lesson branches are workable copies of Laravel and simply need to be cloned and have the Composer dependencies installed with `composer install`.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+------
+
+These are source files for the Tuts+ course: [Get Started With Laravel 5][published url]
+
+Available on [Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
+
+[published url]: https://code.tutsplus.com/courses/get-started-with-laravel-5
+[instructor url]: https://tutsplus.com/authors/jason-lewis
